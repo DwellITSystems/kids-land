@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+
+<head>
+    <title>KIDSLAND</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Barcode+39&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="/js/tailwind.3.4.16.js"></script>
+    <script type="text/javascript" src="/js/tailwind.config.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+</head>
+
+<body>
+    <main class="w-full">
+        <div id="loader"
+            class="absolute top-0 left-0 w-full h-full bg-gray-900/90 z-50 flex items-center justify-center">
+            <div class="w-40 h-40">
+                <img src="/images/loader.gif" class="max-w-full max-h-full" />
+            </div>
+        </div>
+        <header id="header"
+            class="w-full top-0 fixed z-20 flex max-md:px-4 px-12 items-center justify-between bg-white">
+            <div class="w-fit max-md:py-3 flex items-center">
+                <a href="index.html"
+                    class="inline-block text-primary text-2xl font-bold uppercase max-md:w-[140px] w-[130px]">
+                    <img src="/images/logo.png" class="max-w-full max-h-full" alt="logo" />
+                </a>
+            </div>
+
+            <nav class="w-full flex justify-end text-gray-900 relative">
+                <ul class="hidden md:flex text-sm font-semibold">
+                    <li
+                        class="border-t-4 border-t-primary flex items-center py-6 px-2 lg:px-7 cursor-pointer transition-all duration-300 ease-in-out">
+                        <a href="#" class="uppercase leading-6 scroll-link">Home</a>
+                    </li>
+
+                    <li
+                        class="relative group hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-7 cursor-pointer transition-all duration-300 ease-in-out">
+                        <a href="about.html" class="uppercase leading-6 scroll-link flex items-center gap-2">
+                            About Us
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+
+                        <div class="absolute z-10 left-0 hidden group-hover:block w-full bg-primary">
+                            <ul>
+                                <li class="hover:bg-slate-200 hover:text-primary px-2 py-2 text-primary-foreground">
+                                    <a href="#visionmission">Mission & Vision</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li
+                        class="hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-7 cursor-pointer transition-all duration-300 ease-in-out">
+                        <a href="#" class="uppercase leading-6 scroll-link">Classes</a>
+                    </li>
+
+                    <li
+                        class="hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-7 cursor-pointer transition-all duration-300 ease-in-out">
+                        <a href="#" class="uppercase leading-6 scroll-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="md:hidden cursor-pointer" id="hamburger">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </header>
+
+        <section class="w-full">
+            <svg class="bg-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3500 80"
+                preserveAspectRatio="none">
+                <path class="elementor-shape-fill" d="M3599.8,0h-1920v68c0,0,70.8-38,120-38s70.8,38,120,38s70.8-38,120-38c49.2,0,70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                                    	s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                                    	s70.8-38,120-38s120,38,120,38V0z"
+                    fill="#f1f5f9">
+                </path>
+                <path class="elementor-shape-fill" d="M3599.8,0h-1920v68c0,0,70.8-38,120-38s70.8,38,120,38s70.8-38,120-38c49.2,0,70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                                    	s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                                    	s70.8-38,120-38s120,38,120,38V0z"
+                    fill="#f1f5f9">
+                </path>
+                <path class="elementor-shape-fill"
+                    d="M5280.3,0h-1920v68c0,0,70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                                    	c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38
+                                                                                    	c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,120,38,120,38V0z"
+                    fill="#f1f5f9">
+                </path>
+                <path class="elementor-shape-fill"
+                    d="M6480.3-0.4h-1920v68c0,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38
+                                                                                    	c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38
+                                                                                    	c49.2,0,70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s120,38,120,38V-0.4z"
+                    fill="#f1f5f9">
+                </path>
+                <path class="elementor-shape-fill" d="M1920,0H0v68c0,0,70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                                    	s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                                    	s70.8-38,120-38s120,38,120,38V0z"
+                    fill="#f1f5f9">
+                </path>
+            </svg>
+        </section>
+
+        <section class="w-full h-full bg-cover min-h-[70vh] bg-banner-about bg-bottom mt-20">
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
+                class="h-full bg-black/20 min-h-[70vh] flex flex-col items-center justify-center">
+                <h2 class="max-md:text-2xl font-lobster text-primary-foreground text-3xl font-semibold uppercase">
+                    About Us
+                </h2>
+            </div>
+        </section>
+
+        <section id="about"
+            class="w-full max-md:flex-col px-12 bg-gray-900 text-primary-foreground py-10 leading-relaxed flex gap-8 relative">
+            <div class="w-full" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <p class="font-medium max-md:text-sm text-md leading-relaxed text-center">Our journey began in 2016
+                    Founded in 2014, KIDSLAND has developed into one of Aluva's most reputable early learning centers.
+                    We value diversity
+                    and concentrate on fostering the individual potential of every child via play and creativity.
+                </p>
+            </div>
+        </section>
+
+        <section id="visionmission" class="w-full leading-relaxed flex max-md:flex-col gap-8 relative border-t">
+            <div class="w-full max-md:w-full px-12 py-16" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <h3 class="text-4xl font-lobster text-primary text-center">
+                    Mission & Vision
+                </h3>
+
+                <p class="font-medium text-md mt-6 leading-relaxed text-center">
+                    We help children grow socially, emotionally, and mentally in a safe, fun space.
+                </p>
+
+                <p class="font-medium text-md mt-2 leading-relaxed text-center">
+                    Empower children to become confident, compassionate leaders of tomorrow.
+                </p>
+            </div>
+        </section>
+
+        <section class="w-full">
+            <svg class="bg-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3500 80"
+                preserveAspectRatio="none">
+                <path class="elementor-shape-fill" d="M3599.8,0h-1920v68c0,0,70.8-38,120-38s70.8,38,120,38s70.8-38,120-38c49.2,0,70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                            	s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                            	s70.8-38,120-38s120,38,120,38V0z"
+                    fill="#f1f5f9">
+                </path>
+                <path class="elementor-shape-fill" d="M3599.8,0h-1920v68c0,0,70.8-38,120-38s70.8,38,120,38s70.8-38,120-38c49.2,0,70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                            	s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                            	s70.8-38,120-38s120,38,120,38V0z"
+                    fill="#f1f5f9">
+                </path>
+                <path class="elementor-shape-fill"
+                    d="M5280.3,0h-1920v68c0,0,70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                            	c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38
+                                                                            	c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,120,38,120,38V0z"
+                    fill="#f1f5f9">
+                </path>
+                <path class="elementor-shape-fill"
+                    d="M6480.3-0.4h-1920v68c0,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38
+                                                                            	c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38c49.2,0,70.8,38,120,38c49.2,0,70.8-38,120-38
+                                                                            	c49.2,0,70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s120,38,120,38V-0.4z"
+                    fill="#f1f5f9">
+                </path>
+                <path class="elementor-shape-fill" d="M1920,0H0v68c0,0,70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                            	s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38s70.8-38,120-38s70.8,38,120,38
+                                                                            	s70.8-38,120-38s120,38,120,38V0z"
+                    fill="#f1f5f9">
+                </path>
+            </svg>
+        </section>
+
+        <footer class="w-full bg-gray-900 px-12 py-10 mt-0 text-primary-foreground">
+            <div class="w-full grid grid-cols-4 max-md:grid-cols-1 gap-12">
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000"
+                    class="w-full flex items-start flex-col justify-center" data-aos="fade-in" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <div class="text-5xl font-bold">
+                        <a href="/home" class="inline-block text-primary text-2xl font-bold uppercase h-22 w-44">
+                            <img src="/images/logo.png" class="max-w-full max-h-full" alt="logo" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="font-semibold text-lg">QUICK LINKS</h2>
+                    <nav class="flex flex-col justify-center mt-3">
+                        <ul>
+                            <li class="py-2">
+                                <a href="/home"
+                                    class="text-md flex gap-2 items-center font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-4 text-primary">
+                                        <path fillRule="evenodd"
+                                            d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                        <path fillRule="evenodd"
+                                            d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                    </svg>
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="py-2">
+                                <a href="/about"
+                                    class="text-md flex gap-2 items-center  font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-4 text-primary">
+                                        <path fillRule="evenodd"
+                                            d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                        <path fillRule="evenodd"
+                                            d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                    </svg>
+                                    About US
+                                </a>
+                            </li>
+
+                            <li class="py-2">
+                                <a href="/home#services"
+                                    class="text-md flex gap-2 items-center  font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-4 text-primary">
+                                        <path fillRule="evenodd"
+                                            d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                        <path fillRule="evenodd"
+                                            d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                    </svg>
+                                    Classes
+                                </a>
+                            </li>
+
+                            <li class="py-2">
+                                <a href="/home#fleet"
+                                    class="text-md flex gap-2 items-center  font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-4 text-primary">
+                                        <path fillRule="evenodd"
+                                            d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                        <path fillRule="evenodd"
+                                            d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                    </svg>
+                                    Page
+                                </a>
+                            </li>
+
+                            <li class="py-2">
+                                <a href="/home#contact"
+                                    class="text-md flex gap-2 items-center  font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-4 text-primary">
+                                        <path fillRule="evenodd"
+                                            d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                        <path fillRule="evenodd"
+                                            d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd" />
+                                    </svg>
+                                    Contact US
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="font-semibold text-lg">FOLLOW US</h2>
+                    <nav class="flex flex-col justify-center mt-3">
+                        <ul>
+                            <li class="py-2">
+                                <a href="#"
+                                    class="text-md flex gap-2 font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+
+                            <li class="py-2">
+                                <a href="#"
+                                    class="text-md flex gap-2 font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+
+                            <li class="py-2">
+                                <a href="#"
+                                    class="text-md flex gap-2 font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none">
+                                        <path
+                                            d="M11.3214 8.93666L16.4919 3.05566H15.2667L10.7772 8.16205L7.1914 3.05566H3.05566L8.47803 10.7774L3.05566 16.9446H4.28097L9.022 11.552L12.8088 16.9446H16.9446L11.3211 8.93666H11.3214ZM9.64322 10.8455L9.09382 10.0765L4.72246 3.95821H6.60445L10.1322 8.8959L10.6816 9.66481L15.2672 16.083H13.3852L9.64322 10.8458V10.8455Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+
+                            <li class="py-2">
+                                <a href="#"
+                                    class="text-md flex gap-2 font-semibold leading-6 text-gray-300 hover:text-primary transition-all duration-300 ease-in-out">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                        fill="none" stroke="currentColor">
+                                        <path
+                                            d="M22.54 6.42a2.61 2.61 0 0 0-1.85-1.85C19.23 3.38 12 3.38 12 3.38S4.77 3.38 3.31 4.57a2.61 2.61 0 0 0-1.85 1.85C1 8.77 1 12 1 12s0 3.23 1.46 5.42a2.61 2.61 0 0 0 1.85 1.85c1.46 1.19 8.69 1.19 8.69 1.19s6.23 0 7.69-1.19a2.61 2.61 0 0 0 1.85-1.85c1.46-2.19 1.46-5.42 1.46-5.42s0-3.23-1.46-5.42zM9.79 15.6v-7.2l6.42 3.6-6.42 3.6z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <span>Youtube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="w-full" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+                    <h2 class="font-semibold text-lg">ADDRESS</h2>
+                    <p class="text-primary-foreground mt-4 text-sm">Khadeeja Villa</p>
+                    <p class="text-primary-foreground mt-4 text-sm">Opp. Maarvari Engineering Workshop</p>
+                    <p class="text-primary-foreground mt-4 text-sm">Near Casino Theatre, Aluva-683101</p>
+                    <p class="text-primary-foreground mt-4 text-sm">9656035515 / 8547460515</p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="w-full bg-gray-800 py-1">
+            <p
+                class="text-sm flex max-md:flex-col gap-3 items-center justify-center leading-6 text-center text-primary-foreground font-semibold">
+                Powered by
+                <a href="https://www.dwellitsystems.com/" target="_blank" class="w-24 h-10 flex items-center">
+                    <img src="/images/DwellITLogo.png" alt="" class="max-w-full max-h-full" />
+                </a>
+                © 2025 KIDSLAND, Inc. All rights reserved.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>

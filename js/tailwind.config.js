@@ -2,7 +2,8 @@ tailwind.config = {
     theme: {
         extend: {
             backgroundImage: {
-                "banner-1": "url('/images/banner/carousel-1.jpg')"
+                "banner-1": "url('/images/banner/carousel-1.jpg')",
+                "banner-about": "url('/images/banner/banner-about.jpg')"
             },
             colors: {
                 "primary": "rgba(var(--primary-color),1)",

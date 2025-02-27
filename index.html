@@ -5,6 +5,7 @@
     <title>KIDSLAND</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <!-- Slick Slider CSS -->
@@ -16,10 +17,9 @@
 
     <script type="text/javascript" src="/js/tailwind.3.4.16.js"></script>
     <script type="text/javascript" src="/js/tailwind.config.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Slick Slider JS -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/aos.js"></script>
 
 </head>
 
@@ -31,8 +31,7 @@
                 <img src="/images/loader.gif" class="max-w-full max-h-full" />
             </div>
         </div>
-        <header id="header"
-            class="w-full shadow fixed z-20 flex max-md:px-4 px-12 items-center justify-between bg-white">
+        <header id="header" class="w-full fixed z-20 flex max-md:px-4 px-12 items-center justify-between bg-white">
             <div class="w-fit max-md:py-3 flex items-center">
                 <a href="index.html"
                     class="inline-block text-primary text-2xl font-bold uppercase max-md:w-[140px] w-[130px]">
@@ -43,27 +42,36 @@
             <nav class="w-full flex justify-end text-gray-900 relative">
                 <ul class="hidden md:flex text-sm font-semibold">
                     <li
-                        class="border-t-4 border-t-primary flex items-center py-6 px-2 lg:px-6 cursor-pointer transition-all duration-300 ease-in-out">
+                        class="border-t-4 border-t-primary flex items-center py-6 px-2 lg:px-7 cursor-pointer transition-all duration-300 ease-in-out">
                         <a href="#" class="uppercase leading-6 scroll-link">Home</a>
                     </li>
 
                     <li
-                        class="hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-6 cursor-pointer transition-all duration-300 ease-in-out">
-                        <a href="#about" class="uppercase leading-6 scroll-link">About Us</a>
+                        class="relative group hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-7 cursor-pointer transition-all duration-300 ease-in-out">
+                        <a href="about.html" class="uppercase leading-6 scroll-link flex items-center gap-2">
+                            About Us
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+
+                        <div class="absolute z-10 left-0 hidden group-hover:block w-full bg-primary">
+                            <ul>
+                                <li class="hover:bg-slate-200 hover:text-primary px-2 py-2 text-primary-foreground">
+                                    <a href="about.html#visionmission">Mission & Vision</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
                     <li
-                        class="hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-6 cursor-pointer transition-all duration-300 ease-in-out">
+                        class="hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-7 cursor-pointer transition-all duration-300 ease-in-out">
                         <a href="#" class="uppercase leading-6 scroll-link">Classes</a>
                     </li>
 
                     <li
-                        class="hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-6 cursor-pointer transition-all duration-300 ease-in-out">
-                        <a href="#" class="uppercase leading-6 scroll-link">Pages</a>
-                    </li>
-
-                    <li
-                        class="hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-6 cursor-pointer transition-all duration-300 ease-in-out">
+                        class="hover:border-t-primary border-t-4 border-t-primary-foreground py-6 px-2 lg:px-7 cursor-pointer transition-all duration-300 ease-in-out">
                         <a href="#" class="uppercase leading-6 scroll-link">Contact Us</a>
                     </li>
                 </ul>
@@ -115,11 +123,12 @@
         </div>
 
         <section id="welcome" class="w-full pt-12 px-12 flex gap-x-12 bg-primary-foreground">
-            <div class="w-full flex items-end">
+            <div class="w-full flex items-end" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                 <img src="./images/banner-about.jpg" class="max-w-full max-h-full" alt="about-banner" />
             </div>
 
-            <div class="w-full text-center flex flex-col justify-center">
+            <div class="w-full text-center flex flex-col justify-center" data-aos="fade-left" data-aos-delay="100"
+                data-aos-duration="1000">
                 <h3 class="text-4xl font-lobster text-primary">Welcome to KIDSLAND!</h3>
                 <p class="mt-6">At KIDSLAND, we nurture curious minds and joyful hearts! Established in 2014, we provide
                     a safe,
@@ -138,21 +147,21 @@
             </div> -->
 
             <div class="w-full grid grid-cols-3">
-                <div class="w-full bg-red-300">
+                <div class="w-full bg-red-300" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
                     <div class="w-full px-4 py-6">
                         <h2 class="text-md font-semibold text-center leading-tight uppercase">CCTV-monitored premises
                         </h2>
                     </div>
                 </div>
 
-                <div class="w-full bg-orange-200">
+                <div class="w-full bg-orange-200" data-aos="fade-in" data-aos-delay="400" data-aos-duration="1000">
                     <div class="w-full px-4 py-6">
                         <h2 class="text-md font-semibold text-center leading-tight uppercase">Spacious indoor/outdoor
                             play zones</h2>
                     </div>
                 </div>
 
-                <div class="w-full bg-green-200">
+                <div class="w-full bg-green-200" data-aos="fade-in" data-aos-delay="800" data-aos-duration="1000">
                     <div class="w-full px-4 py-6">
                         <h2 class="text-md font-semibold text-center leading-tight uppercase">Age-appropriate learning
                             materials</h2>
@@ -162,17 +171,17 @@
         </section>
 
         <section class="w-full py-12 px-12 bg-primary-foreground">
-            <div class="w-full text-center">
+            <div class="w-full text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h3 class="text-4xl font-lobster text-primary">Our Team</h3>
             </div>
 
             <div class="w-full mt-6 grid grid-cols-2 gap-x-12">
-                <div class="w-full">
+                <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                     <h2 class="font-semibold text-center text-xl">3 MTTC-certified teachers with expertise in
                         child-centered learning</h2>
                 </div>
 
-                <div class="w-full">
+                <div class="w-full" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
                     <h2 class="font-semibold text-center text-xl">3 MTTC-certified teachers with expertise in
                         child-centered learning</h2>
                 </div>
@@ -206,40 +215,69 @@
         </section>
 
         <section class="w-full px-12 py-12 border-b">
-            <div class="w-full text-center">
+            <div class="w-full text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h3 class="text-4xl font-lobster text-primary">Our Gallery</h3>
                 <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
             <div class="w-full mt-14">
                 <div class="gallery-slider flex gap-x-12">
-                    <div class="w-full">
-                        <img src="./images/gallery/gallery-1.jpg" alt="Image 1">
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0317.JPG" alt="Image 1">
                     </div>
 
-                    <div class="w-full">
-                        <img src="./images/gallery/gallery-2.jpg" alt="Image 2">
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0319.JPG" alt="Image 2">
                     </div>
 
-                    <div class="w-full">
-                        <img src="./images/gallery/gallery-3.jpg" alt="Image 3">
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0321.JPG" alt="Image 3">
                     </div>
 
-                    <div class="w-full">
-                        <img src="./images/gallery/gallery-4.jpg" alt="Image 4">
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0322.JPG" alt="Image 4">
+                    </div>
+
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0326.JPG" alt="Image 1">
+                    </div>
+
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0329.JPG" alt="Image 2">
+                    </div>
+
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0332.JPG" alt="Image 3">
+                    </div>
+
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0333.JPG" alt="Image 4">
+                    </div>
+
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0338.JPG" alt="Image 1">
+                    </div>
+
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0347.JPG" alt="Image 2">
+                    </div>
+
+                    <div class="w-full" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <img src="./images/gallery/DSC_0350.JPG" alt="Image 3">
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="w-full px-12 py-12 bg-primary-foreground">
-            <div class="w-full text-center">
+            <div class="w-full text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h3 class="text-4xl font-lobster text-primary">Our Testimonial</h3>
             </div>
 
             <div class="w-full mt-6">
                 <div class="testimonial-slider">
-                    <div class="testimonial flex flex-col">
+                    <div class="testimonial flex flex-col" data-aos="fade-right" data-aos-delay="100"
+                        data-aos-duration="1000">
                         <div class="w-12 h-12">
                             <img src="./images/profile.png" alt="" class="w-full h-full" />
                         </div>
@@ -248,7 +286,8 @@
                         <h3 class="mt-2 text-primary font-medium">- John Doe</h3>
                     </div>
 
-                    <div class="testimonial flex flex-col">
+                    <div class="testimonial flex flex-col" data-aos="fade-right" data-aos-delay="100"
+                        data-aos-duration="1000">
                         <div class="w-12 h-12">
                             <img src="./images/profile.png" alt="" class="w-full h-full" />
                         </div>
@@ -257,7 +296,8 @@
                         <h3 class="mt-2 text-primary font-medium">- John Doe</h3>
                     </div>
 
-                    <div class="testimonial flex flex-col">
+                    <div class="testimonial flex flex-col" data-aos="fade-right" data-aos-delay="100"
+                        data-aos-duration="1000">
                         <div class="w-12 h-12">
                             <img src="./images/profile.png" alt="" class="w-full h-full" />
                         </div>
@@ -296,7 +336,7 @@
         </section>
 
         <section class="w-full px-12 py-12">
-            <div class="w-full text-center">
+            <div class="w-full text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h3 class="text-4xl font-lobster text-primary">Age Groups & Offerings</h3>
                 <p class="mt-2">
                     18 months–2 yrs : (Daycare) Gentle routines, sensory play, and a nurturing environment to build
@@ -307,7 +347,8 @@
             </div>
 
             <div class="w-full mt-12 grid grid-cols-3 gap-6">
-                <div class="w-full group relative h-80 rounded-lg overflow-hidden">
+                <div class="w-full group relative h-80 rounded-lg overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="100" data-aos-duration="1000">
                     <img src="./images/gallery/gallery-1.jpg" alt="Image 4">
 
                     <div class="w-full flex items-center ease-in-out h-80 bg-black/50 absolute top-0 py-2 px-4">
@@ -320,7 +361,8 @@
                     </div>
                 </div>
 
-                <div class="w-full group relative h-80 rounded-lg overflow-hidden">
+                <div class="w-full group relative h-80 rounded-lg overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="300" data-aos-duration="1000">
                     <img src="./images/gallery/gallery-2.jpg" alt="Image 4">
 
                     <div class="w-full flex items-center h-80 bg-black/40 absolute top-0 py-2 px-4">
@@ -332,7 +374,8 @@
                     </div>
                 </div>
 
-                <div class="w-full group relative h-80 rounded-lg overflow-hidden">
+                <div class="w-full group relative h-80 rounded-lg overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="600" data-aos-duration="1000">
                     <img src="./images/gallery/gallery-3.jpg" alt="Image 4">
 
                     <div class="w-full flex items-center h-80 bg-black/40 absolute top-0 py-2 px-4">
@@ -347,12 +390,13 @@
         </section>
 
         <section class="w-full px-12 py-12 bg-primary-foreground">
-            <div class="w-full text-center">
+            <div class="w-full text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h3 class="text-4xl font-lobster text-primary">Our Play-Based Approach</h3>
             </div>
 
             <div class="w-full mt-12 grid grid-cols-3 gap-6">
-                <div class="w-full group relative h-80 rounded-lg overflow-hidden">
+                <div class="w-full group relative h-80 rounded-lg overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="100" data-aos-duration="1000">
                     <img src="./images/gallery/gallery-4.jpg" alt="Image 4">
 
                     <div class="w-full flex items-center h-80 bg-black/40 absolute top-0 py-2 px-4">
@@ -364,7 +408,8 @@
                     </div>
                 </div>
 
-                <div class="w-full group relative h-80 rounded-lg overflow-hidden">
+                <div class="w-full group relative h-80 rounded-lg overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="300" data-aos-duration="1000">
                     <img src="./images/gallery/gallery-5.jpg" alt="Image 4">
 
                     <div class="w-full flex items-center h-80 bg-black/40 absolute top-0 py-2 px-4">
@@ -376,7 +421,8 @@
                     </div>
                 </div>
 
-                <div class="w-full group relative h-80 rounded-lg overflow-hidden">
+                <div class="w-full group relative h-80 rounded-lg overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="600" data-aos-duration="1000">
                     <img src="./images/gallery/gallery-6.jpeg" alt="Image 4">
 
                     <div class="w-full flex items-center h-80 bg-black/40 absolute top-0 py-2 px-4">
@@ -417,12 +463,13 @@
         </section>
 
         <section class="w-full px-12 py-12">
-            <div class="w-full text-center">
+            <div class="w-full text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h3 class="text-4xl font-lobster text-primary">Why Choose Us? </h3>
             </div>
 
             <div class="w-full mt-12 grid grid-cols-4 gap-x-12">
-                <div class="w-full flex flex-col items-center justify-center">
+                <div class="w-full flex flex-col items-center justify-center" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="1000">
                     <div class="w-full flex justify-center">
                         <div class="w-16 h-16 bg-red-200 rounded-full"></div>
                     </div>
@@ -432,7 +479,8 @@
                     </div>
                 </div>
 
-                <div class="w-full flex flex-col items-center justify-center">
+                <div class="w-full flex flex-col items-center justify-center" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-duration="1000">
                     <div class="w-full flex justify-center">
                         <div class="w-16 h-16 bg-red-200 rounded-full"></div>
                     </div>
@@ -443,7 +491,8 @@
                     </div>
                 </div>
 
-                <div class="w-full flex flex-col items-center justify-center">
+                <div class="w-full flex flex-col items-center justify-center" data-aos="fade-up" data-aos-delay="500"
+                    data-aos-duration="1000">
                     <div class="w-full flex justify-center">
                         <div class="w-16 h-16 bg-red-200 rounded-full"></div>
                     </div>
@@ -453,7 +502,8 @@
                     </div>
                 </div>
 
-                <div class="w-full flex flex-col items-center justify-center">
+                <div class="w-full flex flex-col items-center justify-center" data-aos="fade-up" data-aos-delay="700"
+                    data-aos-duration="1000">
                     <div class="w-full flex justify-center">
                         <div class="w-16 h-16 bg-red-200 rounded-full"></div>
                     </div>
@@ -468,13 +518,13 @@
         </section>
 
         <section class="w-full px-12 py-12 bg-primary-foreground">
-            <div class="w-full text-center">
+            <div class="w-full text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <h3 class="text-4xl font-lobster text-primary">Upcoming Event</h3>
             </div>
 
             <div class="w-full mt-12">
                 <div class="event-slider">
-                    <div class="event h-80">
+                    <div class="event h-80" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <img src="images/gallery/gallery-1.jpg" alt="Event 1"
                             class="object-cover max-w-full max-h-full">
                         <div class="absolute bg-black/60 rounded-b-lg py-4 w-full bottom-0 text-primary-foreground">
@@ -484,7 +534,7 @@
                         </div>
                     </div>
 
-                    <div class="event h-80">
+                    <div class="event h-80" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <img src="images/gallery/gallery-2.jpg" alt="Event 2"
                             class="object-cover max-w-full max-h-full">
                         <div class="absolute bg-black/60 rounded-b-lg py-4 w-full bottom-0 text-primary-foreground">
@@ -494,7 +544,7 @@
                         </div>
                     </div>
 
-                    <div class="event h-80">
+                    <div class="event h-80" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                         <img src="images/gallery/gallery-3.jpg" alt="Event 3"
                             class="object-cover max-w-full max-h-full">
                         <div class="absolute bg-black/60 rounded-b-lg py-4 w-full bottom-0 text-primary-foreground">
@@ -509,11 +559,12 @@
 
         <section class="w-full flex gap-x-12">
             <div class="w-full mt-12 px-12 py-12">
-                <div class="w-full text-center">
+                <div class="w-full text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                     <h3 class="text-4xl font-lobster text-primary">Get in Touch</h3>
                 </div>
 
-                <form action="send-contact.php" method="POST">
+                <form action="send-contact.php" method="POST" data-aos="fade-right" data-aos-delay="100"
+                    data-aos-duration="1000">
                     <div class="w-full grid max-md:grid-cols-1 grid-cols-2 gap-6 mt-16" data-aos="zoom-in"
                         data-aos-delay="100" data-aos-duration="1000">
                         <div class="w-full col-span-2 max-md:col-span-1">
@@ -555,7 +606,7 @@
                 </form>
             </div>
 
-            <div class="w-full" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+            <div class="w-full" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
                 <div class="mapouter">
                     <div class="gmap_canvas">
                         <iframe class="w-full h-[564px]" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
@@ -597,7 +648,8 @@
 
         <footer class="w-full bg-gray-900 px-12 py-10 mt-0 text-primary-foreground">
             <div class="w-full grid grid-cols-4 max-md:grid-cols-1 gap-12">
-                <div class="w-full flex items-start flex-col justify-center" data-aos="fade-in" data-aos-delay="100"
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000"
+                    class="w-full flex items-start flex-col justify-center" data-aos="fade-in" data-aos-delay="100"
                     data-aos-duration="1000">
                     <div class="text-5xl font-bold">
                         <a href="/home" class="inline-block text-primary text-2xl font-bold uppercase h-22 w-44">
@@ -606,7 +658,7 @@
                     </div>
                 </div>
 
-                <div class="w-full" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+                <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="w-full">
                     <h2 class="font-semibold text-lg">QUICK LINKS</h2>
                     <nav class="flex flex-col justify-center mt-3">
                         <ul>
@@ -693,7 +745,7 @@
                     </nav>
                 </div>
 
-                <div class="w-full" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+                <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                     <h2 class="font-semibold text-lg">FOLLOW US</h2>
                     <nav class="flex flex-col justify-center mt-3">
                         <ul>
@@ -749,7 +801,7 @@
                     </nav>
                 </div>
 
-                <div class="w-full" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+                <div class="w-full" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
                     <h2 class="font-semibold text-lg">ADDRESS</h2>
                     <p class="text-primary-foreground mt-4 text-sm">Khadeeja Villa</p>
                     <p class="text-primary-foreground mt-4 text-sm">Opp. Maarvari Engineering Workshop</p>
@@ -775,6 +827,9 @@
 
     <script>
         $(document).ready(function () {
+
+            AOS.init();
+
             $('.slider').slick({
                 dots: true,
                 infinite: true,

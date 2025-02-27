@@ -37,7 +37,7 @@
         content: "";
         width: 100%;
         height: 20px;
-        bottom: -20px;
+        bottom: -19px;
         left: 0;
         background: url('/images/bg-sub.png') center center repeat-x;
         z-index: 1;
@@ -111,6 +111,11 @@
         justify-content: center;
         padding: 0 10px;
         height: auto !important;
+    }
+
+    .gallery-slider .slick-dots {
+        height: 50px !important;
+        bottom: -70px !important;
     }
 
     .testimonial-slider {
